@@ -63,8 +63,8 @@ function slide03Gosho() {
     <p class="slide-body">
       <ruby>御書<rt>ごしょ</rt></ruby>とは、<ruby>日蓮大聖人<rt>にちれんだいしょうにん</rt></ruby>が書き残した<ruby>手紙<rt>てがみ</rt></ruby>や<ruby>論文<rt>ろんぶん</rt></ruby>のことです。弟子や<ruby>信者<rt>しんじゃ</rt></ruby>への励ましの言葉、仏法の<ruby>真髄<rt>しんずい</rt></ruby>が詰まっています。
     </p>
-    <div class="gosho-quote">
-      <div class="gosho-text">「<ruby>日蓮<rt>にちれん</rt></ruby>が<ruby>弟子<rt>でし</rt></ruby>・<ruby>檀那<rt>だんな</rt></ruby>等の<ruby>為<rt>ため</rt></ruby>に書き遺す所の<ruby>法門<rt>ほうもん</rt></ruby>等、<ruby>未来<rt>みらい</rt></ruby>に<ruby>流布<rt>るふ</rt></ruby>せしめよ」</div>
+    <div class="highlight-box" style="font-size: 1.8cqw;">
+      御書には約700編の<ruby>手紙<rt>てがみ</rt></ruby>や<ruby>論文<rt>ろんぶん</rt></ruby>が現存しています。<ruby>創価学会<rt>そうかがっかい</rt></ruby>では御書を信仰実践の根本として大切にしています。
     </div>
     <div class="icon-row" style="margin-top: 1cqw;">
       <div class="icon-item card">
@@ -90,8 +90,8 @@ function slide04Shohojisso() {
     <div class="section-label">第１章</div>
     <h2 class="slide-h2"><ruby>諸法実相抄<rt>しょほうじっそうしょう</rt></ruby>のポイント</h2>
     <div class="gosho-quote">
-      <div class="gosho-text">「<ruby>汝<rt>なんじ</rt></ruby><ruby>自身<rt>じしん</rt></ruby>は<ruby>釈尊<rt>しゃくそん</rt></ruby>の<ruby>使<rt>つかい</rt></ruby>と<ruby>自覚<rt>じかく</rt></ruby>せよ」</div>
-      <div class="gosho-source">— <ruby>諸法実相抄<rt>しょほうじっそうしょう</rt></ruby></div>
+      <div class="gosho-text">「<ruby>一閻浮提第一<rt>いちえんぶだいだいいち</rt></ruby>の<ruby>御本尊<rt>ごほんぞん</rt></ruby>を<ruby>信<rt>しん</rt></ruby>じさせ<ruby>給<rt>たま</rt></ruby>え。あいかまえて、あいかまえて、<ruby>信心<rt>しんじん</rt></ruby>つよく<ruby>候<rt>そうろう</rt></ruby>いて、<ruby>三仏<rt>さんぶつ</rt></ruby>の<ruby>守護<rt>しゅご</rt></ruby>をこうむらせ<ruby>給<rt>たま</rt></ruby>うべし」</div>
+      <div class="gosho-source">— <ruby>諸法実相抄<rt>しょほうじっそうしょう</rt></ruby>（新1793・全1361）</div>
     </div>
     <div class="flex-row gap-2" style="flex: 1;">
       <div class="highlight-box flex-1">
@@ -245,8 +245,8 @@ function slide09Honzon() {
   <div class="slide-pad h-full flex-col gap-2">
     <div class="section-label">第２章</div>
     <h2 class="slide-h2"><ruby>本門<rt>ほんもん</rt></ruby>の<ruby>本尊<rt>ほんぞん</rt></ruby></h2>
-    <div class="gosho-quote">
-      <div class="gosho-text">「<ruby>本門<rt>ほんもん</rt></ruby>の<ruby>本尊<rt>ほんぞん</rt></ruby>とは<ruby>一閻浮提<rt>いちえんぶだい</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>々の<ruby>各<rt>おの</rt></ruby>おのが<ruby>胸中<rt>きょうちゅう</rt></ruby>の<ruby>仏<rt>ほとけ</rt></ruby>」</div>
+    <div class="highlight-box" style="font-size: 1.8cqw;">
+      身延において大聖人は、<ruby>三大秘法<rt>さんだいひほう</rt></ruby>（<ruby>本門<rt>ほんもん</rt></ruby>の<ruby>本尊<rt>ほんぞん</rt></ruby>・<ruby>本門<rt>ほんもん</rt></ruby>の<ruby>戒壇<rt>かいだん</rt></ruby>・<ruby>本門<rt>ほんもん</rt></ruby>の<ruby>題目<rt>だいもく</rt></ruby>）を明らかにされました。
     </div>
     <div class="highlight-box" style="font-size: 2.2cqw; text-align: center;">
       <ruby>御本尊<rt>ごほんぞん</rt></ruby>は「<ruby>南無妙法蓮華経<rt>なむみょうほうれんげきょう</rt></ruby>」と<ruby>刻<rt>きざ</rt></ruby>まれた<ruby>曼荼羅<rt>まんだら</rt></ruby>のことです
@@ -354,7 +354,8 @@ function slide12Kosenrufu() {
       </div>
     </div>
     <div class="gosho-quote">
-      <div class="gosho-text">「<ruby>広宣流布<rt>こうせんるふ</rt></ruby>は<ruby>日本国<rt>にほんこく</rt></ruby>より<ruby>始<rt>はじ</rt></ruby>まるべき」</div>
+      <div class="gosho-text">「『<ruby>大願<rt>だいがん</rt></ruby>』とは、<ruby>法華弘通<rt>ほっけぐずう</rt></ruby>なり」</div>
+      <div class="gosho-source">（新1027・全736）</div>
     </div>
   </div>
 </section>`;
@@ -409,39 +410,68 @@ function slide14BridgeCh3() {
 
 function slide15Jikkai() {
   return `<section class="slide" data-notes="十界は一つひとつの境涯ではなく、私たちが瞬間瞬間に体験する生命の状態です。">
-  <div class="slide-pad h-full flex-col gap-2">
+  <div class="slide-pad-sm h-full flex-col gap-2">
     <div class="section-label">第３章</div>
-    <h2 class="slide-h2"><ruby>十界<rt>じっかい</rt></ruby>って何？</h2>
-    <p class="slide-body">
-      生命が持つ10種類の<ruby>境涯<rt>きょうがい</rt></ruby>（心の状態）のことです。誰の中にも、この10の状態がすべて含まれています。
+    <h2 class="slide-h2" style="margin-bottom: 0.5cqw;"><ruby>十界<rt>じっかい</rt></ruby>って何？</h2>
+    <p class="slide-small" style="margin-bottom: 0.8cqw;">
+      生命が持つ10種類の<ruby>境涯<rt>きょうがい</rt></ruby>（心の状態）のこと。誰の中にも、この10の状態がすべて含まれています。
     </p>
-    <div style="display: flex; justify-content: center; flex: 1;">
-      <svg viewBox="0 0 320 180" style="width: 100%; max-width: 60cqw;" aria-label="十界の階段図（下から地獄・餓鬼・畜生・修羅・人・天・声聞・縁覚・菩薩・仏）">
-        <!-- Staircase steps bottom to top, left to right -->
-        <!-- Step colors: red gradient to gold -->
-        <rect x="0"   y="150" width="28" height="30" fill="#ef4444" rx="2"/>
-        <text x="14"  y="165" text-anchor="middle" font-size="6.5" fill="white" font-weight="bold"><ruby>地獄</ruby></text>
-        <rect x="30"  y="130" width="28" height="50" fill="#f97316" rx="2"/>
-        <text x="44"  y="155" text-anchor="middle" font-size="6.5" fill="white" font-weight="bold"><ruby>餓鬼</ruby></text>
-        <rect x="60"  y="110" width="28" height="70" fill="#eab308" rx="2"/>
-        <text x="74"  y="147" text-anchor="middle" font-size="6.5" fill="white" font-weight="bold"><ruby>畜生</ruby></text>
-        <rect x="90"  y="90"  width="28" height="90" fill="#84cc16" rx="2"/>
-        <text x="104" y="137" text-anchor="middle" font-size="6.5" fill="white" font-weight="bold"><ruby>修羅</ruby></text>
-        <rect x="120" y="70"  width="28" height="110" fill="#22c55e" rx="2"/>
-        <text x="134" y="127" text-anchor="middle" font-size="6.5" fill="white" font-weight="bold">人</text>
-        <rect x="150" y="55"  width="28" height="125" fill="#06b6d4" rx="2"/>
-        <text x="164" y="119" text-anchor="middle" font-size="6.5" fill="white" font-weight="bold">天</text>
-        <rect x="180" y="40"  width="28" height="140" fill="#3b82f6" rx="2"/>
-        <text x="194" y="112" text-anchor="middle" font-size="6.5" fill="white" font-weight="bold"><ruby>声聞</ruby></text>
-        <rect x="210" y="25"  width="28" height="155" fill="#6366f1" rx="2"/>
-        <text x="224" y="104" text-anchor="middle" font-size="6.5" fill="white" font-weight="bold"><ruby>縁覚</ruby></text>
-        <rect x="240" y="12"  width="28" height="168" fill="#8b5cf6" rx="2"/>
-        <text x="254" y="97"  text-anchor="middle" font-size="6.5" fill="white" font-weight="bold"><ruby>菩薩</ruby></text>
-        <rect x="270" y="0"   width="28" height="180" fill="#f59e0b" rx="2"/>
-        <text x="284" y="88"  text-anchor="middle" font-size="6.5" fill="white" font-weight="bold">仏</text>
-        <!-- Arrow -->
-        <text x="310" y="90" font-size="16" fill="#f59e0b">↑</text>
-      </svg>
+    <div class="flex-row gap-3" style="flex: 1; align-items: stretch;">
+
+      <!-- 六道 -->
+      <div style="flex: 1.2; display: flex; flex-direction: column; gap: 0.5cqw;">
+        <div style="font-size: 1.2cqw; font-weight: 700; color: var(--c-sub); letter-spacing: 0.08em; padding-bottom: 0.3cqw; border-bottom: 2px solid #e2e8f0;"><ruby>六道<rt>ろくどう</rt></ruby> — 迷いの世界</div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5cqw; flex: 1;">
+          <div style="background:#fef2f2; border-radius:10px; padding:0.7cqw 1cqw; display:flex; align-items:center; gap:0.7cqw;">
+            <span style="font-size:2cqw;">😣</span><span style="font-size:1.5cqw; font-weight:700;"><ruby>地獄界<rt>じごくかい</rt></ruby></span>
+          </div>
+          <div style="background:#fff7ed; border-radius:10px; padding:0.7cqw 1cqw; display:flex; align-items:center; gap:0.7cqw;">
+            <span style="font-size:2cqw;">😩</span><span style="font-size:1.5cqw; font-weight:700;"><ruby>餓鬼界<rt>がきかい</rt></ruby></span>
+          </div>
+          <div style="background:#fefce8; border-radius:10px; padding:0.7cqw 1cqw; display:flex; align-items:center; gap:0.7cqw;">
+            <span style="font-size:2cqw;">😤</span><span style="font-size:1.5cqw; font-weight:700;"><ruby>畜生界<rt>ちくしょうかい</rt></ruby></span>
+          </div>
+          <div style="background:#f0fdf4; border-radius:10px; padding:0.7cqw 1cqw; display:flex; align-items:center; gap:0.7cqw;">
+            <span style="font-size:2cqw;">😠</span><span style="font-size:1.5cqw; font-weight:700;"><ruby>修羅界<rt>しゅらかい</rt></ruby></span>
+          </div>
+          <div style="background:#f0f9ff; border-radius:10px; padding:0.7cqw 1cqw; display:flex; align-items:center; gap:0.7cqw;">
+            <span style="font-size:2cqw;">😊</span><span style="font-size:1.5cqw; font-weight:700;"><ruby>人界<rt>にんかい</rt></ruby></span>
+          </div>
+          <div style="background:#eff6ff; border-radius:10px; padding:0.7cqw 1cqw; display:flex; align-items:center; gap:0.7cqw;">
+            <span style="font-size:2cqw;">😄</span><span style="font-size:1.5cqw; font-weight:700;"><ruby>天界<rt>てんかい</rt></ruby></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 矢印 -->
+      <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; color:var(--c-accent); gap:0.4cqw;">
+        <span style="font-size:2.2cqw;">→</span>
+        <span style="font-size:1cqw; color:var(--c-sub); writing-mode:vertical-rl; letter-spacing:0.1em;">高まる</span>
+      </div>
+
+      <!-- 四聖 -->
+      <div style="flex: 1; display: flex; flex-direction: column; gap: 0.5cqw;">
+        <div style="font-size: 1.2cqw; font-weight: 700; color: var(--c-sub); letter-spacing: 0.08em; padding-bottom: 0.3cqw; border-bottom: 2px solid #e2e8f0;"><ruby>四聖<rt>ししょう</rt></ruby> — 悟りの世界</div>
+        <div style="display:flex; flex-direction:column; gap:0.5cqw; flex:1;">
+          <div style="background:#f5f3ff; border-radius:10px; padding:0.7cqw 1cqw; display:flex; align-items:center; gap:0.7cqw; flex:1;">
+            <span style="font-size:2cqw;">👂</span><span style="font-size:1.5cqw; font-weight:700;"><ruby>声聞界<rt>しょうもんかい</rt></ruby></span>
+          </div>
+          <div style="background:#fdf4ff; border-radius:10px; padding:0.7cqw 1cqw; display:flex; align-items:center; gap:0.7cqw; flex:1;">
+            <span style="font-size:2cqw;">🌿</span><span style="font-size:1.5cqw; font-weight:700;"><ruby>縁覚界<rt>えんがくかい</rt></ruby></span>
+          </div>
+          <div style="background:#f0fdf4; border-radius:10px; padding:0.7cqw 1cqw; display:flex; align-items:center; gap:0.7cqw; flex:1;">
+            <span style="font-size:2cqw;">🙏</span><span style="font-size:1.5cqw; font-weight:700;"><ruby>菩薩界<rt>ぼさつかい</rt></ruby></span>
+          </div>
+          <div style="background:#fefce8; border-radius:10px; padding:0.7cqw 1cqw; display:flex; align-items:center; gap:0.7cqw; flex:1; border:2px solid var(--c-accent);">
+            <span style="font-size:2cqw;">✨</span>
+            <div>
+              <div style="font-size:1.5cqw; font-weight:700; color:var(--c-accent);"><ruby>仏界<rt>ぶっかい</rt></ruby></div>
+              <div style="font-size:1cqw; color:var(--c-sub);">誰もが持つ最高の境涯</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>`;
@@ -562,8 +592,8 @@ function slide18Jikkaigugu() {
         <div class="highlight-box" style="font-size: 1.9cqw; padding: 1.5cqw;">
           だから「普通の人」でも仏になれる
         </div>
-        <div class="gosho-quote" style="padding: 1.5cqw;">
-          <div class="gosho-text" style="font-size: 1.9cqw;">「<ruby>仏界<rt>ぶっかい</rt></ruby>は<ruby>餓鬼界<rt>がきかい</rt></ruby>にも<ruby>具<rt>ぐ</rt></ruby>す」</div>
+        <div class="highlight-box" style="font-size: 1.9cqw; padding: 1.5cqw;">
+          これが「<ruby>十界互具<rt>じっかいごぐ</rt></ruby>」の法理です。誰もが<ruby>仏界<rt>ぶっかい</rt></ruby>を開く可能性を持っています。
         </div>
       </div>
     </div>
@@ -719,7 +749,8 @@ function slide24Shin() {
       </div>
     </div>
     <div class="gosho-quote">
-      <div class="gosho-text">「<ruby>信<rt>しん</rt></ruby>は<ruby>道<rt>みち</rt></ruby>の<ruby>源<rt>みなもと</rt></ruby>、<ruby>功徳<rt>くどく</rt></ruby>の<ruby>母<rt>はは</rt></ruby>」</div>
+      <div class="gosho-text">「<ruby>汝舎利弗<rt>なんじしゃりほつ</rt></ruby>すら　<ruby>尚<rt>なお</rt></ruby>この<ruby>経<rt>きょう</rt></ruby>に<ruby>於<rt>おい</rt></ruby>ては　<ruby>信<rt>しん</rt></ruby>を<ruby>以<rt>もっ</rt></ruby>て<ruby>入<rt>い</rt></ruby>ることを<ruby>得<rt>え</rt></ruby>たり」</div>
+      <div class="gosho-source">— <ruby>法華経<rt>ほけきょう</rt></ruby>197ページ（<ruby>以信代入<rt>いしんだいにゅう</rt></ruby>）</div>
     </div>
   </div>
 </section>`;
@@ -837,7 +868,7 @@ function slide27ShinGyoGaku() {
           信・行・学は車の三つの輪。一つが欠けても前へ進めません。
         </p>
         <div class="gosho-quote">
-          <div class="gosho-text">「<ruby>行学<rt>ぎょうがく</rt></ruby>の二道をはげみ<ruby>候<rt>そうろう</rt></ruby>べし」</div>
+          <div class="gosho-text">「<ruby>行学<rt>ぎょうがく</rt></ruby>の二道をはげみ<ruby>候<rt>そうろう</rt></ruby>べし。<ruby>行学<rt>ぎょうがく</rt></ruby>たえなば<ruby>仏法<rt>ぶっぽう</rt></ruby>はあるべからず。我もいたし、人をも<ruby>教化<rt>きょうけ</rt></ruby><ruby>候<rt>そうろう</rt></ruby>え。<ruby>行学<rt>ぎょうがく</rt></ruby>は<ruby>信心<rt>しんじん</rt></ruby>よりおこるべく<ruby>候<rt>そうろう</rt></ruby>。<ruby>力<rt>ちから</rt></ruby>あらば<ruby>一文一句<rt>いちもんいっく</rt></ruby>なりともかたらせ<ruby>給<rt>たま</rt></ruby>うべし。」</div>
           <div class="gosho-source">— 諸法実相抄</div>
         </div>
       </div>
@@ -884,7 +915,7 @@ function slide29BridgeCh6() {
     <div class="chapter-num" style="font-size: 18cqw; font-weight: 900; opacity: 0.15; line-height: 1; position: absolute; right: 4cqw; top: 50%; transform: translateY(-50%);">6</div>
     <div class="slide-caption" style="font-size: 2cqw; letter-spacing: 0.2em; margin-bottom: 2cqw; opacity: 0.8;">第６章</div>
     <div class="slide-h1" style="font-size: 6cqw; line-height: 1.25; margin-bottom: 2.5cqw;">
-      <ruby>宿命転換<rt>しゅくみょうてんかん</rt></ruby>
+      <ruby>宿命転換<rt>しゅくめいてんかん</rt></ruby>
     </div>
     <div class="slide-caption" style="font-size: 2.4cqw; opacity: 0.85;">
       生まれながらの運命も変えられる
@@ -897,10 +928,10 @@ function slide30Shukumyo() {
   return `<section class="slide" data-notes="宿命転換は単なる精神論ではなく、実際の生命変革のことを指します。">
   <div class="slide-pad h-full flex-col gap-2">
     <div class="section-label">第６章</div>
-    <h2 class="slide-h2"><ruby>宿命<rt>しゅくみょう</rt></ruby>って何？</h2>
+    <h2 class="slide-h2"><ruby>宿命<rt>しゅくめい</rt></ruby>って何？</h2>
     <div class="flex-row gap-2" style="flex: 1;">
       <div class="card flex-1" style="padding: 2.5cqw; border-top: 4px solid #ef4444;">
-        <div class="slide-accent" style="font-size: 2.2cqw; font-weight: 700; margin-bottom: 1cqw; color: #dc2626;"><ruby>宿命<rt>しゅくみょう</rt></ruby></div>
+        <div class="slide-accent" style="font-size: 2.2cqw; font-weight: 700; margin-bottom: 1cqw; color: #dc2626;"><ruby>宿命<rt>しゅくめい</rt></ruby></div>
         <div class="slide-body" style="font-size: 2cqw;">
           過去世からの<ruby>業<rt>ごう</rt></ruby>（カルマ）による生まれつきの<ruby>運命<rt>うんめい</rt></ruby>
         </div>
@@ -1064,8 +1095,8 @@ function slide35Itaidoshin() {
         <div class="slide-small" style="margin-top: 0.8cqw;"><ruby>諸事<rt>しょじ</rt></ruby>が<ruby>成<rt>な</rt></ruby>らない</div>
       </div>
     </div>
-    <div class="gosho-quote">
-      <div class="gosho-text">「<ruby>異体同心<rt>いたいどうしん</rt></ruby>なれば<ruby>万事<rt>ばんじ</rt></ruby>を<ruby>成<rt>な</rt></ruby>し<ruby>同体異心<rt>どうたいいしん</rt></ruby>なれば<ruby>諸事<rt>しょじ</rt></ruby><ruby>叶<rt>かな</rt></ruby>う事なし」</div>
+    <div class="highlight-box" style="font-size: 1.9cqw;">
+      <ruby>広宣流布<rt>こうせんるふ</rt></ruby>を進めるにあたって、互いの個性を認め合いながら、同じ<ruby>目的<rt>もくてき</rt></ruby>に向かって力を合わせることが大切です。
     </div>
   </div>
 </section>`;
@@ -1394,23 +1425,23 @@ function slide47Matome1() {
     <h2 class="slide-h2">今日学んだこと — まとめ①</h2>
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5cqw; flex: 1;">
       <div class="card" style="padding: 2cqw;">
-        <div class="slide-accent" style="font-size: 1.9cqw; font-weight: 700; color: #3b82f6; margin-bottom: 0.6cqw;">Ch1 御書・諸法実相抄</div>
+        <div class="slide-accent" style="font-size: 1.9cqw; font-weight: 700; color: #3b82f6; margin-bottom: 0.6cqw;">御書・諸法実相抄</div>
         <div class="slide-small"><ruby>日蓮大聖人<rt>にちれんだいしょうにん</rt></ruby>の教えの根本</div>
       </div>
       <div class="card" style="padding: 2cqw;">
-        <div class="slide-accent" style="font-size: 1.9cqw; font-weight: 700; color: #8b5cf6; margin-bottom: 0.6cqw;">Ch2 <ruby>一生成仏<rt>いっしょうじょうぶつ</rt></ruby>・<ruby>広宣流布<rt>こうせんるふ</rt></ruby></div>
+        <div class="slide-accent" style="font-size: 1.9cqw; font-weight: 700; color: #8b5cf6; margin-bottom: 0.6cqw;"><ruby>一生成仏<rt>いっしょうじょうぶつ</rt></ruby>・<ruby>広宣流布<rt>こうせんるふ</rt></ruby></div>
         <div class="slide-small">この一生で必ず幸福に</div>
       </div>
       <div class="card" style="padding: 2cqw;">
-        <div class="slide-accent" style="font-size: 1.9cqw; font-weight: 700; color: #22c55e; margin-bottom: 0.6cqw;">Ch3 <ruby>十界<rt>じっかい</rt></ruby></div>
+        <div class="slide-accent" style="font-size: 1.9cqw; font-weight: 700; color: #22c55e; margin-bottom: 0.6cqw;"><ruby>十界<rt>じっかい</rt></ruby></div>
         <div class="slide-small">生命の10の<ruby>境涯<rt>きょうがい</rt></ruby>、誰にも<ruby>仏界<rt>ぶっかい</rt></ruby>がある</div>
       </div>
       <div class="card" style="padding: 2cqw;">
-        <div class="slide-accent" style="font-size: 1.9cqw; font-weight: 700; color: #f59e0b; margin-bottom: 0.6cqw;">Ch4 <ruby>三証<rt>さんしょう</rt></ruby></div>
+        <div class="slide-accent" style="font-size: 1.9cqw; font-weight: 700; color: #f59e0b; margin-bottom: 0.6cqw;"><ruby>三証<rt>さんしょう</rt></ruby></div>
         <div class="slide-small"><ruby>現証<rt>げんしょう</rt></ruby>こそ最大の証明</div>
       </div>
       <div class="card" style="padding: 2cqw; grid-column: span 2;">
-        <div class="slide-accent" style="font-size: 1.9cqw; font-weight: 700; color: #ef4444; margin-bottom: 0.6cqw;">Ch5 <ruby>信行学<rt>しんぎょうがく</rt></ruby></div>
+        <div class="slide-accent" style="font-size: 1.9cqw; font-weight: 700; color: #ef4444; margin-bottom: 0.6cqw;"><ruby>信行学<rt>しんぎょうがく</rt></ruby></div>
         <div class="slide-small">信じ・実践し・学ぶ</div>
       </div>
     </div>
@@ -1428,19 +1459,19 @@ function slide48Matome2() {
     <h2 class="slide-h2">今日学んだこと — まとめ②</h2>
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5cqw; flex: 1;">
       <div class="card" style="padding: 2cqw;">
-        <div class="slide-accent" style="font-size: 1.9cqw; font-weight: 700; color: #ef4444; margin-bottom: 0.6cqw;">Ch6 <ruby>宿命転換<rt>しゅくみょうてんかん</rt></ruby></div>
+        <div class="slide-accent" style="font-size: 1.9cqw; font-weight: 700; color: #ef4444; margin-bottom: 0.6cqw;"><ruby>宿命転換<rt>しゅくめいてんかん</rt></ruby></div>
         <div class="slide-small"><ruby>変毒為薬<rt>へんどくいやく</rt></ruby>、宿命も変えられる</div>
       </div>
       <div class="card" style="padding: 2cqw;">
-        <div class="slide-accent" style="font-size: 1.9cqw; font-weight: 700; color: #f59e0b; margin-bottom: 0.6cqw;">Ch7 <ruby>諸天善神<rt>しょてんぜんじん</rt></ruby>・<ruby>異体同心<rt>いたいどうしん</rt></ruby>・振る舞い</div>
+        <div class="slide-accent" style="font-size: 1.9cqw; font-weight: 700; color: #f59e0b; margin-bottom: 0.6cqw;"><ruby>諸天善神<rt>しょてんぜんじん</rt></ruby>・<ruby>異体同心<rt>いたいどうしん</rt></ruby>・振る舞い</div>
         <div class="slide-small">団結と誠実さ</div>
       </div>
       <div class="card" style="padding: 2cqw;">
-        <div class="slide-accent" style="font-size: 1.9cqw; font-weight: 700; color: #3b82f6; margin-bottom: 0.6cqw;">Ch8 <ruby>創価学会<rt>そうかがっかい</rt></ruby>の歴史</div>
+        <div class="slide-accent" style="font-size: 1.9cqw; font-weight: 700; color: #3b82f6; margin-bottom: 0.6cqw;"><ruby>創価学会<rt>そうかがっかい</rt></ruby>の歴史</div>
         <div class="slide-small">牧口・戸田・池田の三代の師弟</div>
       </div>
       <div class="card" style="padding: 2cqw;">
-        <div class="slide-accent" style="font-size: 1.9cqw; font-weight: 700; color: #22c55e; margin-bottom: 0.6cqw;">Ch9 <ruby>宗教改革<rt>しゅうきょうかいかく</rt></ruby></div>
+        <div class="slide-accent" style="font-size: 1.9cqw; font-weight: 700; color: #22c55e; margin-bottom: 0.6cqw;"><ruby>宗教改革<rt>しゅうきょうかいかく</rt></ruby></div>
         <div class="slide-small"><ruby>立正安国<rt>りっしょうあんこく</rt></ruby>、社会の平和のために</div>
       </div>
     </div>

@@ -17,13 +17,43 @@
   const rendered = new Set();
   let notesTimer = null;
 
-  // ── クイズ初期化（答えを隠してボタンを追加） ──
+  // ── クイズ初期化（選択肢シャッフル + 正解ハイライト隠し + 答えオーバーレイ） ──
   function initQuizSlide(slideEl) {
     if (!slideEl.classList.contains('slide-quiz')) return;
-    if (slideEl.dataset.quizInit) return; // 二重初期化防止
+    if (slideEl.dataset.quizInit) return;
     slideEl.dataset.quizInit = '1';
 
-    // ✅ マークを含む要素を答えとして特定
+    // ── 選択肢カードを収集（選択肢を囲むラッパーを特定）──
+    const cards = Array.from(slideEl.querySelectorAll('.card'));
+    if (cards.length === 0) return;
+    const choiceWrap = cards[0].parentNode;
+
+    // ── 正解カードを特定（style属性に 22c55e が含まれる）──
+    let correctCard = null;
+    cards.forEach(card => {
+      const styleAttr = card.getAttribute('style') || '';
+      if (styleAttr.includes('22c55e')) correctCard = card;
+    });
+
+    // ── 正解カードの視覚的ハイライトをすべて除去（正解・不正解を均一化）──
+    cards.forEach(card => {
+      // カード自体の green border-left を除去
+      card.style.borderLeft = '';
+      // カード内の num-pill の色を全部グレーに統一
+      const pill = card.querySelector('[style]');
+      if (pill) pill.style.background = '#94a3b8';
+    });
+
+    // ── 選択肢をシャッフルして番号を振り直す ──
+    const nums = ['①', '②', '③', '④'];
+    const shuffled = cards.slice().sort(() => Math.random() - 0.5);
+    shuffled.forEach((card, i) => {
+      choiceWrap.appendChild(card); // 並び替え
+      const pill = card.querySelector('[style]');
+      if (pill) pill.textContent = nums[i]; // 番号を振り直す
+    });
+
+    // ── ✅ 答え要素を特定してオーバーレイに移動 ──
     const allDivs = slideEl.querySelectorAll('div');
     let answerEl = null;
     allDivs.forEach(div => {
@@ -31,19 +61,30 @@
     });
     if (!answerEl) return;
 
-    // 答えを隠す
-    answerEl.classList.add('quiz-answer-box');
+    const answerHTML = answerEl.innerHTML;
+    answerEl.remove();
 
-    // 「答えを見る」ボタンを挿入
+    const answerOverlay = document.createElement('div');
+    answerOverlay.className = 'quiz-overlay';
+    answerOverlay.innerHTML = '<div class="quiz-overlay-inner">' + answerHTML + '</div>';
+    slideEl.appendChild(answerOverlay);
+
+    // ── 「答えを見る」ボタン ──
     const btn = document.createElement('button');
     btn.className = 'quiz-reveal-btn';
     btn.textContent = '👀 答えを見る';
     btn.addEventListener('click', e => {
       e.stopPropagation();
-      answerEl.classList.add('revealed');
+      // 正解カードだけハイライト復元
+      if (correctCard) {
+        correctCard.style.borderLeft = '4px solid #22c55e';
+        const pill = correctCard.querySelector('[style]');
+        if (pill) pill.style.background = '#22c55e';
+      }
+      answerOverlay.classList.add('visible');
       btn.classList.add('hidden');
     });
-    answerEl.parentNode.insertBefore(btn, answerEl);
+    slideEl.appendChild(btn);
   }
 
   // ── レンダリング ──
